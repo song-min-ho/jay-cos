@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>jay-cos</title>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>	
+    <![endif]-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_layout.css">    
+    <script src="js/jquery-3.5.1.min.js"></script>        
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script><script src="js/map.js"></script>
+    <script type="text/javascript" src="js/index_script.js"></script>
+    <script src="js/mousewheel.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="top">
+            <h3 class="logo"><a href="#"><img src="images/common/logo.png" alt="jay"></a></h3>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">Company</a>
+                        <ul class="submenu">
+                            <li><a href="#">회사소개</a><div class="line"></div></li>
+                            <li><a href="#">찾아오시는 길</a><div class="line"></div></li>
+                            <li><a href="#">제이갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Business</a>
+                        <ul class="submenu">
+                            <li><a href="#">사업영역</a><div class="line"></div></li>
+                            <li><a href="#">ONE-STOP SOLUTION</a><div class="line"></div></li>
+                            <li><a href="#">LABORATORY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Product</a>
+                        <ul class="submenu">
+                            <li><a href="#">제품소개</a><div class="line"></div></li>
+                            <li><a href="#">RG케어</a></li>                           
+                        </ul>
+                    </li>
+                    <li><a href="#">Inquiry</a>
+                        <ul class="submenu">
+                            <li><a href="#">1:1문의</a></li>                                                      
+                        </ul>
+                    </li>
+                    <li><a href="#">Customer</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a><div class="line"></div></li>
+                            <li><a href="#">Q&A</a></li>                           
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!--gnb-->
+            <nav class="icon">
+            <ul>
+                <li><a href="#menu1" title="아이콘1"><img src="images/common/btn_off.png" alt="아이콘" /></a></li>
+                <li><a href="#menu2" title="아이콘2"><img src="images/common/btn_off.png" alt="아이콘" /></a></li>
+                <li><a href="#menu3" title="아이콘3"><img src="images/common/btn_off.png" alt="아이콘" /></a></li>
+                <li><a href="#menu4" title="아이콘4"><img src="images/common/btn_off.png" alt="아이콘" /></a></li>
+            </ul>
+        </nav><!--icon-->
+        </header><!--top-->
+        <div class="container">
+            <section id="menu1"><!--자동 좌우슬라이드-->
+                <ul class="slide_banner"><!--플러그인 선언 id 수정 x-->
+                    <li><!--첫번째 슬라이드-->
+                        <section class="menu1_1">
+                            <div>
+                                <h1>JAY Co., Ltd.</h1>
+                                <p></p>
+                                <h3>A more beauty group</h3>
+                                <h2>제이는 새로운 아름다움을 창조하는 기업입니다.</h2>
+                                <input type="button" value="자세히보기">
+                            </div>
+                        </section>
+                    </li>
+                    <li><!--두번째 슬라이드-->
+                        <section class="menu1_2">
+                            <div>
+                                <h1>JAY Co., Ltd.</h1>
+                                <p></p>
+                                <h3>ONE-STOP SOLUTION</h3>
+                                <h2>독자적으로 개발한 ODM 생산 기술입니다.</h2>
+                                <input type="button" value="자세히보기">
+                            </div>
+                        </section>
+                    </li>
+                    <li><!--세번째 슬라이드-->
+                        <section class="menu1_3">
+                            <div>
+                                <h1>JAY Co., Ltd.</h1>
+                                <p></p>
+                                <h3>Business</h3>
+                                <h2>화장품제조를 주요 사업영역으로 다루는 기업입니다.</h2>
+                                <input type="button" value="자세히보기">
+                            </div>
+                        </section>
+                    </li>
+                </ul><!--slide_banner-->
+                <a href="#" class="scroll"><img src="images/common/mouse.png" alt="scroll"></a>
+            </section><!--menu1-->
+            <section id="menu2">
+                <div>
+                    <h2>Portfolio</h2>
+                    <h3>자사의 차별화된 제품입니다.</h3>
+                    <nav class="sub_gnb">
+                        <ul>
+                            <li><a href="#">헤로드</a></li>
+                            <li><a href="#">나눌</a></li>
+                            <li><a href="#">에스메드</a></li>
+                            <li><a href="#">샐러리그룹</a></li>
+                            <li><a href="#">제이토끼</a></li>
+                            <li><a href="#">스킨케어</a></li>
+                        </ul>
+                    </nav><!--sub_gnb-->
+                    <div class="item_wrap">
+                        <div class="item1">
+                            <img src="images/index/item1.JPG" alt="item">
+                            <p><a href="#">수수꽃다리 퍼퓸 미스트</a></p>
+                        </div>
+                        <div class="item2">
+                            <img src="images/index/item2.JPG" alt="item">
+                            <p><a href="#">수수꽃다리 퍼퓸 에센스</a></p>
+                        </div>
+                        <div class="item3">
+                            <img src="images/index/item3.JPG" alt="item">
+                            <p><a href="#">수수꽃다리 퍼퓸 두폼</a></p>
+                        </div>
+                        <div class="item4">
+                            <img src="images/index/item4.JPG" alt="item">
+                            <p><a href="#">수수꽃다리 퍼퓸 마스크</a></p>
+                        </div>
+                    </div>
+                    <input type="button" value="view more +">
+                </div>
+            </section><!--menu2-->
+            <section id="menu3">
+                <div>
+                    <h2>ONE-STOP SOLUTION</h2>
+                    <h3>자사 노하우로 개발한 솔루션입니다.</h3>
+                    <div class="member_wrap">
+                        <div class="member1">
+                            <img src="images/index/member_img1.png" alt="member">
+                            <p>CONTRACT <br> <span>클라이언트의뢰 및 계약</span></p>
+                        </div>
+                        <div class="member2">
+                            <img src="images/index/member_img2.png" alt="member">
+                            <p>R & D <br> <span>맞춤처방 개발</span></p>
+                        </div>
+                        <div class="member3">
+                            <img src="images/index/member_img3.png" alt="member">
+                            <p>DESIGN <br> <span>패키지디자인</span></p>
+                        </div>
+                        <div class="member4">
+                            <img src="images/index/member_img4.png" alt="member">
+                            <p>DELIVERY <br> <span>생산 / QC / 출고</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section><!--menu3-->
+            <section id="menu4">
+                <div class="menu4_title">
+                    <h2>Support</h2>
+                    <h3>찾아오시는 길입니다.</h3>
+                </div>
+                <div class="support_wrap">
+                    <div class="left_wrap">
+                        <div id="map1"></div>
+                        <div class="tel">
+                            경기도 의정부시 서부로545, 851호 (주)제이 <br>
+                            jayjay2018@naver.com <br>
+                            031-876-7369
+                        </div>
+                    </div>
+                    <div class="right_wrap">
+                        <input type="text" class="name" placeholder="Name">
+                        <input type="text" class="email" placeholder="Email">
+                        <input type="text" class="Message" placeholder="Message">
+                        <button class="submit">메일보내기</button>
+                        <button class="cancle">취소</button>
+                    </div>
+                </div>
+                <div class="bottom_wrap">
+                <footer class="bottom">
+                    <div class="address">
+                        (주)제이 | 대표 : 양미정 | 사업자등록번호 : 323-87-00618 <br>
+                        경기도 의정부시 서부로545, 851호 <br>
+                        TEL 031 876 7369 | FAX 031 876 0211
+                    </div><!--address-->
+                    <div class="copyright">
+                        COPYRIGHT (C) JAY Co., Ltd. ALL RIGHTS RESERVED.
+                    </div><!--copyright-->
+                </footer><!--bottom-->
+            </div><!--bottom_wrap-->
+            </section><!--menu4-->            
+        </div><!--container-->        
+    </div><!--wrap-->
+</body></html>
