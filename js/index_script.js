@@ -1,5 +1,13 @@
 $(document).ready(function () {
     
+    // 로고 등장
+    $('.menu1_1').children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
+    $('.menu1_1').children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
+    $('.menu1_1').children('div').children('p').delay(1000).animate({'top':'0','opacity':'1'})
+    $('.menu1_1').children('div').children('h3').delay(1500).animate({'top':'0','opacity':'1'})
+    $('.menu1_1').children('div').children('h2').delay(2000).animate({'top':'0','opacity':'1'})
+    $('.menu1_1').children('div').children('input').delay(2000).animate({'top':'0','opacity':'1'})
+    
     // 메뉴오버 서브메뉴 등장
     $('.gnb ul li').hover(function () {
         $(this).children('.submenu').show();
@@ -35,7 +43,7 @@ $(document).ready(function () {
         $(this).attr('src', 'images/common/btn_on.png');
     });
 
-    // 아이콘 스크롤 색상변경       
+    // 스크롤 닷 색상변경       
     $(window).scroll(function () {
         var top = $(this).scrollTop()
         var sec1 = $('#menu1').offset().top + 1
@@ -54,55 +62,54 @@ $(document).ready(function () {
         } else if (top > sec3 && top < sec4) {
             $('.icon ul li a img').attr('src', 'images/common/btn_off.png');
             $('.icon ul li a img:eq(3)').attr('src', 'images/common/btn_on.png');
-        };        
+        };         
     });
 
-    // 2페이지 아이템 마우스 오버
+    // #menu2 아이템 마우스 오버
     $('.item_wrap div').hover(function () {
         $(this).children('p').stop().fadeIn(300);
     }, function () {
         $(this).children('p').stop().fadeOut(300);
-    });    
-    
-    
+    });     
 });
 
-// 좌우 slide 텍스트 애니메이션
+// 좌우 slide + 텍스트 애니메이션
 function slide() {
-    $('.slide_banner li section:first').delay(2000).fadeOut(2000, function () {
-        $(this).children('div').hide();
+    $('.slide_banner li section:first').delay(2000).fadeOut(2000, function () {      
         $(this).parent('li').appendTo('.slide_banner');
+        $(this).children('div').children('h1').css({'top':'','opacity':''})
+        $(this).children('div').children('p').css({'top':'','opacity':''})
+        $(this).children('div').children('h3').css({'top':'','opacity':''})
+        $(this).children('div').children('h2').css({'top':'','opacity':''})
+        $(this).children('div').children('input').css({'top':'','opacity':''})
     });
     $('.slide_banner li section:eq(1)').fadeIn(2000, function() {
-        $($(this).children('div')).children('h1').animate({'top':'0','opacity':'1'})
+        $(this).children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
+        $(this).children('div').children('p').delay(1000).animate({'top':'0','opacity':'1'})
+        $(this).children('div').children('h3').delay(1500).animate({'top':'0','opacity':'1'})
+        $(this).children('div').children('h2').delay(2000).animate({'top':'0','opacity':'1'})
+        $(this).children('div').children('input').delay(2000).animate({'top':'0','opacity':'1'})
     })
 };
-setInterval('slide()', 2000)
-
-
+setInterval('slide()', 4000) 
+/*첫번째에서 두번째로 넘어가는 시간 4000*/
+/*그 뒤로는 페이드효과 때문에 조금 더 길어짐*/
+/*delay랑 fade 시간 더한 값을 넣어주면 자연스러움*/
 
 // 창 리사이즈
+// 마우스 휠(오토스크롤) 플러그인이 첫 창의 height를 입력받기 때문에 리사이즈 해줘야함. css cover만으로 안됨.
 $( window ).resize(function() {  
     var height = $(window).height();
     console.log(height);
     $('html, body, .wrap , .container, .container section').css('height',height);
 });
 
-
-// 창 리사이즈 2차시도
+// 창 리사이즈 setInterval 이거 쓰면 느려지나
 /*
 function resize() {
-    var height = $(window).height();
-    console.log(height);
+    var height = $(window).height();    
     $('html, body, .wrap , .container, .container section').css('height',height);
 }
 
 setInterval('resize()', 1000)
 */
-
-
-
-
-
-
-

@@ -12,7 +12,6 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 .wrap{width:100%; height:100%;}
 .container{width:100%; height:100%;}
 .container section{width: 100%; height: 100%;}
-#menu1{position: relative;}
 .menu1_1, .menu1_2, .menu1_3{width: 100%; height: 100%; position: absolute;}
 .menu1_2, .menu1_3{display: none;}
 
@@ -75,33 +74,23 @@ body{background-color: #fff; color: #333; overflow: hidden;}
     100%{bottom: 30px;}
 }
 
+/*menu1*/
+#menu1{position: relative;}/*here*/
+
 /*menu1_1*/
-.menu1_1 > div{width: 1000px; padding-top: 250px; margin: 0 auto; text-align: center; color: #fff;}
-.menu1_1 h1,.menu1_1 p, .menu1_1 h3, .menu1_1 h2{}, .menu1_1 input{position: relative; top: -30px; opacity: 0;}
-.menu1_1 h1{font-size: 60px;}
+.menu1_1 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+.menu1_1 > div > h1, .menu1_1 > div > p, .menu1_1 > div > h3, .menu1_1 > div > h2, .menu1_1>div> input{position: relative; top: 50px; opacity:0}
+.menu1_1 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_1 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_1 h3{font-size: 20px; font-weight: normal;}
 .menu1_1 h2{font-size: 40px; font-weight: normal; margin-top: 30px;}
 .menu1_1 input{width: 150px; height: 50px; margin-top: 50px; background-color: rgba(0,0,0,0); border: 2px solid #fff; color: #fff; font-weight: bold; font-size: 13px; transition:all 0.6s}
 .menu1_1 input:hover{background-color: #C20E22; border: 2px solid #C20E22; cursor: pointer;}
 
-/*슬라이드 텍스트 애니메이션*/
-.menu1_1 .splitting .char{
-    display: inline-block;
-    animation: slide-up 1s cubic-bezier(.5, 0, .5, 1) both;
-    /*fill-mode:both; 는 시작전에 스타일 적용 + 마지막 키프레임 유지 */
-    animation-delay: calc(60ms * var(--char-index)); /*splitting*/
-    /*calc는 css에서 사용되는 수식 계산해주는 함수*/
-}
-@keyframes slide-up{
-    0%{transform: translateY(30px); opacity: 0;}
-    80%{transform: translateY(30px); opacity: 0;}
-}
-
 /*menu1_2*/
-.menu1_2 > div{width: 1000px; padding-top: 250px; margin: 0 auto; text-align: center; color: #fff; display: none;}
-.menu1_2 h1,.menu1_2 p, .menu1_2 h3, .menu1_2 h2{}, .menu1_3 input{position: relative; top: -30px; opacity: 0;}
-.menu1_2 h1{font-size: 60px;}
+.menu1_2 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+.menu1_2 > div > h1, .menu1_2 > div > p, .menu1_2 > div > h3, .menu1_2 > div > h2, .menu1_2>div> input{position: relative; top: 50px; opacity:0}
+.menu1_2 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_2 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_2 h3{font-size: 20px; font-weight: normal;}
 .menu1_2 h2{font-size: 40px; font-weight: normal; margin-top: 30px;}
@@ -109,9 +98,9 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 .menu1_2 input:hover{background-color: #C20E22; border: 2px solid #C20E22; cursor: pointer;}
 
 /*menu1_3*/
-.menu1_3 > div{width: 1000px; padding-top: 250px; margin: 0 auto; text-align: center; color: #fff; display: none;}
-.menu1_3 h1,.menu1_3 p, .menu1_3 h3, .menu1_3 h2{}, .menu1_3 input{position: relative; top: -30px; opacity: 0;}
-.menu1_3 h1{font-size: 60px;}
+.menu1_3 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+.menu1_3 > div > h1, .menu1_3 > div > p, .menu1_3 > div > h3, .menu1_3 > div > h2, .menu1_3>div> input{position: relative; top: 50px; opacity:0}
+.menu1_3 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_3 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_3 h3{font-size: 20px; font-weight: normal;}
 .menu1_3 h2{font-size: 40px; font-weight: normal; margin-top: 30px;}
