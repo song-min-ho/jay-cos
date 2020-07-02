@@ -158,13 +158,10 @@ button{height: 40px; margin-top: 40px; border: none; border-radius: 3px}
 
 
 @media screen and (max-height: 790px) { 
-    .bottom_wrap_hide{display: none;}
-    .bottom_wrap{display: block;}
-}
-@media screen and (max-height: 712px) { 
     .menu4_title{display: none;}
+    .support_wrap{padding-top: 120px;}
 }
-@media screen and (max-height: 503px) {     
+@media screen and (max-height: 645px) {     
     #menu4{min-height: 700px;}
 }
 
