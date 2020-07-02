@@ -6,7 +6,7 @@ img{border:none; vertical-align: top;}
 ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 html, body{width:100%; height:100%; box-sizing: border-box;}
-body{background-color: #fff; color: #333; overflow: hidden;}
+body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 
 /*wrap*/
 .wrap{width:100%; height:100%;}
@@ -79,7 +79,7 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 
 /*menu1_1*/
 .menu1_1 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
-.menu1_1 > div > h1, .menu1_1 > div > p, .menu1_1 > div > h3, .menu1_1 > div > h2, .menu1_1>div> input{position: relative; top: 50px; opacity:0}
+.menu1_1 > div > h1, .menu1_1 > div > p, .menu1_1 > div > h3, .menu1_1 > div > h2, .menu1_1>div> input{position: relative;}
 .menu1_1 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_1 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_1 h3{font-size: 20px; font-weight: normal;}
@@ -89,7 +89,7 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 
 /*menu1_2*/
 .menu1_2 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
-.menu1_2 > div > h1, .menu1_2 > div > p, .menu1_2 > div > h3, .menu1_2 > div > h2, .menu1_2>div> input{position: relative; top: 50px; opacity:0}
+.menu1_2 > div > h1, .menu1_2 > div > p, .menu1_2 > div > h3, .menu1_2 > div > h2, .menu1_2>div> input{position: relative;}
 .menu1_2 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_2 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_2 h3{font-size: 20px; font-weight: normal;}
@@ -99,7 +99,7 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 
 /*menu1_3*/
 .menu1_3 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
-.menu1_3 > div > h1, .menu1_3 > div > p, .menu1_3 > div > h3, .menu1_3 > div > h2, .menu1_3>div> input{position: relative; top: 50px; opacity:0}
+.menu1_3 > div > h1, .menu1_3 > div > p, .menu1_3 > div > h3, .menu1_3 > div > h2, .menu1_3>div> input{position: relative;}
 .menu1_3 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_3 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
 .menu1_3 h3{font-size: 20px; font-weight: normal;}
@@ -137,10 +137,10 @@ body{background-color: #fff; color: #333; overflow: hidden;}
 #menu4 h2{font-size: 40px;}
 #menu4 h3{font-size: 20px; font-weight: normal; margin-top: 10px;}
 .support_wrap{width: 1200px; height: 500px; margin: 0 auto; padding-top: 80px;}
-.left_wrap{width: 490px; height: 450px; float: left; margin-left: 70px;}
+.left_wrap{width: 490px; float: left; margin-left: 70px;}
 #map1{width:490px; height:300px; }
 .tel{width: 490px; height: 100px; margin-top: 10px; line-height: 25px; color: #fff; font-size: 13px; font-weight: bold;}
-.right_wrap{width: 490px; height: 450px; float: left; margin-left: 70px;}
+.right_wrap{width: 490px; float: left; margin-left: 70px;}
 .right_wrap input{width: 490px; border-radius: 5px; text-indent: 20px; border: none;}
 .name{height: 50px; margin-bottom: 5px;}
 .email{height: 50px; margin-bottom: 5px;}
@@ -150,10 +150,21 @@ button{height: 40px; margin-top: 40px; border: none; border-radius: 3px}
 .cancle{width: 90px; background-color: #fff; color: #666; font-weight: bold;}
 
 /*bottom*/
-#menu4{position: relative;}
-.bottom_wrap{width: 100%; height:125px; background-color: #222; position: absolute; bottom: 0;}
+#menu4{position: relative; min-height: 500px;}
+.bottom_wrap{width: 100%; height:125px; background-color: #222; min-width: 1200px; position: absolute; bottom: 0px;}
 .bottom{width: 80%; height: 125px; margin: 0 auto; color: #666; font-size: 13px;}
 .address{width: 400px; height: 125px; line-height: 20px; float: left; padding-top: 35px; padding-left: 30px;}
 .copyright{width: 320px; height: 125px; line-height: 125px; float: right; }
 
+
+@media screen and (max-height: 790px) { 
+    .bottom_wrap_hide{display: none;}
+    .bottom_wrap{display: block;}
+}
+@media screen and (max-height: 712px) { 
+    .menu4_title{display: none;}
+}
+@media screen and (max-height: 503px) {     
+    #menu4{min-height: 700px;}
+}
 

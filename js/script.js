@@ -1,5 +1,10 @@
 $(document).ready(function () {
     
+    // 로고 초기화
+    $('.menu1_1>div>h1, .menu1_1>div>p, .menu1_1>div>h3, .menu1_1>div>h2, .menu1_1>div>input').css({'top':'50px','opacity':'0'})
+    $('.menu1_2>div>h1, .menu1_2>div>p, .menu1_2>div>h3, .menu1_2>div>h2, .menu1_2>div>input').css({'top':'50px','opacity':'0'})
+    $('.menu1_3>div>h1, .menu1_3>div>p, .menu1_3>div>h3, .menu1_3>div>h2, .menu1_3>div>input').css({'top':'50px','opacity':'0'})
+        
     // 로고 등장
     $('.menu1_1').children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
     $('.menu1_1').children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
@@ -77,11 +82,11 @@ $(document).ready(function () {
 function slide() {
     $('.slide_banner li section:first').delay(2000).fadeOut(2000, function () {      
         $(this).parent('li').appendTo('.slide_banner');
-        $(this).children('div').children('h1').css({'top':'','opacity':''})
-        $(this).children('div').children('p').css({'top':'','opacity':''})
-        $(this).children('div').children('h3').css({'top':'','opacity':''})
-        $(this).children('div').children('h2').css({'top':'','opacity':''})
-        $(this).children('div').children('input').css({'top':'','opacity':''})
+        $(this).children('div').children('h1').css({'top':'50px','opacity':'0'})
+        $(this).children('div').children('p').css({'top':'50px','opacity':'0'})
+        $(this).children('div').children('h3').css({'top':'50px','opacity':'0'})
+        $(this).children('div').children('h2').css({'top':'50px','opacity':'0'})
+        $(this).children('div').children('input').css({'top':'50px','opacity':'0'})
     });
     $('.slide_banner li section:eq(1)').fadeIn(2000, function() {
         $(this).children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
@@ -104,12 +109,12 @@ $( window ).resize(function() {
     $('html, body, .wrap , .container, .container section').css('height',height);
 });
 
-// 창 리사이즈 setInterval 이거 쓰면 느려지나
+// 창 리사이즈 크기 늘릴때 화면 올라가는거 리셋
 /*
-function resize() {
-    var height = $(window).height();    
-    $('html, body, .wrap , .container, .container section').css('height',height);
-}
-
-setInterval('resize()', 1000)
+$( window ).resize(function() {  
+    var height = $(window).height();
+    console.log(height);
+    
+    $('html').animate({scrollTo: +}, 800);
+});
 */
