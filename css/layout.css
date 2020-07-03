@@ -23,23 +23,23 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 }
 .menu1_2{
     background:url(../images/index/main_visual2.jpg) no-repeat center fixed;   
-    background-size: cover;
-    
+    background-size: cover;    
 }
 .menu1_3{
     background:url(../images/index/main_visual3.jpg) no-repeat center fixed;
     background-size: cover;    
 }
 #menu2{
-    background:url(../images/index/main_bg1.jpg) no-repeat center fixed;;    
+    background:url(../images/index/main_bg1.jpg) no-repeat center fixed;    
     background-size: cover;    
 }
 #menu3{
-    background:url(../images/index/main_bg2.jpg) no-repeat center fixed;;    
+    background:url(../images/index/main_bg2.jpg) no-repeat center fixed;    
     background-size: cover;    
 }
 #menu4{
-    background:url(../images/index/main_bg3.jpg) no-repeat center fixed;;
+    background:url(../images/index/main_bg3.jpg) no-repeat center fixed;
+    background-position: fixed;
     background-size: cover;    
 }
 
@@ -136,7 +136,7 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 .menu4_title{width: 1200px; padding-top: 150px; margin: 0 auto; text-align: center; color: #fff;}
 #menu4 h2{font-size: 40px;}
 #menu4 h3{font-size: 20px; font-weight: normal; margin-top: 10px;}
-.support_wrap{width: 1200px; height: 500px; margin: 0 auto; padding-top: 80px;}
+.support_wrap{width: 1200px; height: auto; margin: 0 auto; padding-top: 80px;}
 .left_wrap{width: 490px; float: left; margin-left: 70px;}
 #map1{width:490px; height:300px; }
 .tel{width: 490px; height: 100px; margin-top: 10px; line-height: 25px; color: #fff; font-size: 13px; font-weight: bold;}
@@ -156,12 +156,13 @@ button{height: 40px; margin-top: 40px; border: none; border-radius: 3px}
 .address{width: 400px; height: 125px; line-height: 20px; float: left; padding-top: 35px; padding-left: 30px;}
 .copyright{width: 320px; height: 125px; line-height: 125px; float: right; }
 
-
+/*
 @media screen and (max-height: 790px) { 
+    .menu4_title{display: none;}
+    .support_wrap{padding-top: 200px;}
+}
+@media screen and (max-height: 704px) { 
     .menu4_title{display: none;}
     .support_wrap{padding-top: 120px;}
 }
-@media screen and (max-height: 645px) {     
-    #menu4{min-height: 700px;}
-}
-
+*/

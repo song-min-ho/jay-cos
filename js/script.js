@@ -102,19 +102,10 @@ setInterval('slide()', 4000)
 /*delay랑 fade 시간 더한 값을 넣어주면 자연스러움*/
 
 // 창 리사이즈
-// 마우스 휠(오토스크롤) 플러그인이 첫 창의 height를 입력받기 때문에 리사이즈 해줘야함. css cover만으로 안됨.
-$( window ).resize(function() {  
-    var height = $(window).height();
-    console.log(height);
-    $('html, body, .wrap , .container, .container section').css('height',height);
-});
-
-// 창 리사이즈 크기 늘릴때 화면 올라가는거 리셋
 /*
 $( window ).resize(function() {  
     var height = $(window).height();
     console.log(height);
-    
-    $('html').animate({scrollTo: +}, 800);
+    $('html, body, .wrap , .container, .container section').css('height',height);
 });
 */
