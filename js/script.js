@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 // 좌우 slide + 텍스트 애니메이션
 function slide() {
-    $('.slide_banner li section:first').delay(2000).fadeOut(2000, function () {      
+    $('.slide_banner li section:first').delay(2000).fadeOut(2000, function () { 			
         $(this).parent('li').appendTo('.slide_banner');
         $(this).children('div').children('h1').css({'top':'50px','opacity':'0'})
         $(this).children('div').children('p').css({'top':'50px','opacity':'0'})
@@ -88,7 +88,7 @@ function slide() {
         $(this).children('div').children('h2').css({'top':'50px','opacity':'0'})
         $(this).children('div').children('input').css({'top':'50px','opacity':'0'})
     });
-    $('.slide_banner li section:eq(1)').fadeIn(2000, function() {
+    $('.slide_banner li section:eq(1)').fadeIn(2000, function() {		
         $(this).children('div').children('h1').delay(500).animate({'top':'0','opacity':'1'})
         $(this).children('div').children('p').delay(1000).animate({'top':'0','opacity':'1'})
         $(this).children('div').children('h3').delay(1500).animate({'top':'0','opacity':'1'})

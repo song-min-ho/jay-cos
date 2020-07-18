@@ -78,7 +78,7 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 #menu1{position: relative;}/*here*/
 
 /*menu1_1*/
-.menu1_1 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+.menu1_1 > div{width: 1000px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;}
 .menu1_1 > div > h1, .menu1_1 > div > p, .menu1_1 > div > h3, .menu1_1 > div > h2, .menu1_1>div> input{position: relative;}
 .menu1_1 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_1 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
@@ -88,7 +88,7 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 .menu1_1 input:hover{background-color: #C20E22; border: 2px solid #C20E22; cursor: pointer;}
 
 /*menu1_2*/
-.menu1_2 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+.menu1_2 > div{width: 1000px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;}
 .menu1_2 > div > h1, .menu1_2 > div > p, .menu1_2 > div > h3, .menu1_2 > div > h2, .menu1_2>div> input{position: relative;}
 .menu1_2 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_2 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
@@ -98,7 +98,8 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 .menu1_2 input:hover{background-color: #C20E22; border: 2px solid #C20E22; cursor: pointer;}
 
 /*menu1_3*/
-.menu1_3 > div{width: 1000px; padding-top: 220px; margin: 0 auto; text-align: center; color: #fff;}
+
+.menu1_3 > div{width: 1000px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;}
 .menu1_3 > div > h1, .menu1_3 > div > p, .menu1_3 > div > h3, .menu1_3 > div > h2, .menu1_3>div> input{position: relative;}
 .menu1_3 h1{font-size: 60px; margin-bottom: 50px;}
 .menu1_3 p{width: 100px; height: 8px; background-color: #C20E22; margin: 30px auto;}
@@ -108,7 +109,8 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 .menu1_3 input:hover{background-color: #C20E22; border: 2px solid #C20E22; cursor: pointer;}
 
 /*menu2*/
-#menu2 > div{width: 1100px; padding-top: 180px; margin: 0 auto; text-align: center; color: #333;}
+#menu2{display: flex; align-items: center;}
+#menu2 > div{width: 1100px; margin: 0 auto; text-align: center; color: #333;}
 #menu2 h2{font-size: 40px;}
 #menu2 h3{font-size: 20px; font-weight: normal; margin-top: 10px;}
 #menu2 .sub_gnb{width: 592px; height: 40px; margin: 20px auto; line-height: 40px; }
@@ -123,7 +125,8 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 #menu2 input:hover{background-color: #000; color: #fff; cursor: pointer;}
 
 /*menu3*/
-#menu3 > div{width: 1200px; padding-top: 180px; margin: 0 auto; text-align: center; color: #fff;}
+#menu3{display: flex; align-items: center;}
+#menu3 > div{width: 1200px; margin: 0 auto; text-align: center; color: #fff;}
 #menu3 h2{font-size: 40px;}
 #menu3 h3{font-size: 20px; font-weight: normal; margin-top: 10px;}
 .member_wrap{width: 1200px; min-width: 1100px; height: 300px; margin-top: 70px; padding-left: 50px;}
@@ -133,10 +136,12 @@ body{background-color: #fff; color: #333; overflow: hidden; min-height: 800px;}
 .member_wrap div p span{color: #fff; font-size: 14px;}
 
 /*menu4*/
-.menu4_title{width: 1200px; padding-top: 150px; margin: 0 auto; text-align: center; color: #fff;}
+#menu4{display: flex; align-items: center;}
+#menu4>div{margin: 0 auto;}
+.menu4_title{width: 1200px; text-align: center; color: #fff;}
 #menu4 h2{font-size: 40px;}
 #menu4 h3{font-size: 20px; font-weight: normal; margin-top: 10px;}
-.support_wrap{width: 1200px; height: auto; margin: 0 auto; padding-top: 80px;}
+.support_wrap{width: 1200px; height: auto; padding-top: 80px;}
 .left_wrap{width: 490px; float: left; margin-left: 70px;}
 #map1{width:490px; height:300px; }
 .tel{width: 490px; height: 100px; margin-top: 10px; line-height: 25px; color: #fff; font-size: 13px; font-weight: bold;}
